@@ -1,0 +1,71 @@
+body {
+  background-color: #f7ecde;
+}
+.form {
+  border-top: dotted 2px black;
+  border-bottom: dotted 2px black;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  z-index: 9;
+  line-height: 60px;
+}
+h1::before {
+  content: "";
+  width: 280px;
+  height: 25px;
+  background-color: #fec260;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+h1:hover::before {
+  height: 40px;
+}
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form .btn-submition {
+  background-color: #d1512d;
+}
+.form .btn-submition:hover {
+  background-color: #bb4120;
+  border-color: #a03315;
+}
+.errorMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+.rounded-circle {
+  width: 15px;
+  height: 15px;
+}
+.errorMessage .errorMessage-caption li {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+}
+.errorMessage .errorMessage-caption p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 27px;
+}
+.errorMessage .errorMessage-header i {
+  font-size: 25px;
+}
